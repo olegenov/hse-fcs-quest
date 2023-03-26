@@ -1,9 +1,9 @@
-@import url('../font/HSESans-Black.otf');
-@import url('../font/HSESans-Bold.otf');
-@import url('../font/HSESans-Italic.otf');
-@import url('../font/HSESans-Regular.otf');
-@import url('../font/HSESans-SemiBold.otf');
-@import url('../font/HSESans-Thin.otf');
+@import url('../font/HSESans-Black.ttf');
+@import url('../font/HSESans-Bold.ttf');
+@import url('../font/HSESans-Italic.ttf');
+@import url('../font/HSESans-Regular.ttf');
+@import url('../font/HSESans-SemiBold.ttf');
+@import url('../font/HSESans-Thin.ttf');
 
 @import "../vendor/normalize.css";
 @import "../styles/styles.css";
