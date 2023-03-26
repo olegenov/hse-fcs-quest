@@ -15,7 +15,7 @@ services:
     build: .
     restart: always
     volumes:
-      - static:/code/static/
+      - static_value:/code/static/
     depends_on:
       - db
     env_file:
