@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Квест</title>
+    <link rel="stylesheet" href='./static/pages/index.css' type='text/css' media='all'>
+</head>
+<body class="body">
+    <div class="warning__back" id="Warning">
+        <div class="warning">
+            <h3 class="warning__title">Привет!</h3>
+            <p class="warning__text">Добро пожаловать на квест от CSTATI! Вам предстоит искать QR-коды на Покре и отгадывать загадки.</p>
+            <p class="warning__tip">Внимание! Не меняйте устройство команды и не используйте VPN или иные средства смены IP-адореса в течение квеста.</p>
+            <button class="warning__button" id="WarningButton">Поехали!</button>
+        </div>
+    </div>
+    <div class="error" id="Error">
+        <p class="error__text">Неправильный ответ!</p>
+        <button class="button__empty" id="CloseError"><span class="icon-close"></span></button>
+    </div>
+    <nav class="nav">
+        <a href="" class="link">
+            <p class="nav__text">
+                by CSTATI
+            </p>
+        </a>
+        <span class="icon-cstati"></span>
+    </nav>
+    <main class="main">
+        <header class="header">
+            <h1 class="header__title">
+                Вы собрали:
+            </h1>
+            <div class="header__letters">
+                <span class="letter">В</span>
+                <span class="letter">Н</span>
+                <span class="letter">Е</span>
+                <span class="letter">У</span>
+                <span class="letter">Ч</span>
+                <span class="letter">Е</span>
+                <span class="letter active">Б</span>
+            </div>
+        </header>
+        <div class="section">
+            <h1 class="section__header">Вопрос</h1>
+            <p class="section__text">
+                Шутники говорят, что однажды Hиклауса Вирта пригласили в Италию. Приехал он и спрашивает:
+– А правда, что самый классный язык в мире – это Паскаль?
+Как ответили итальянцы, если Hиклаус Вирт очень сильно обиделся и с тех пор больше никогда не ездил в Италию?
+            </p>
+            <p class="section__tip">
+                В ответе 2 буквы
+            </p>
+            <div class="section__input__group">
+                <input type="text" class="section__input" placeholder="Введите ответ">
+                <button type="submit" class="section__input__submit"><span class="icon-arrow"></span></button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="static/js/error.js"></script>
+<script src="static/js/warning.js"></script>
+</html>
