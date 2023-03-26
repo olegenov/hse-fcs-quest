@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href='{% static "pages/index.css" %}' type='text/css' media='all'>
+{% endblock %}
+{% block letters %}
+    {% include "includes/letters.html" %}
+{% endblock %}
+{% block content %}
+    {% csrf_token %}
+    <div class="section">
+        <h1 class="section__header">Верно!</h1>
+        <h3 class="section__subtitle">Подсказка к следующему месту</h3>
+        <p class="section__text">
+            {{ puzzle.tip_this }}
+        </p>
+    </div>
+{% endblock %}

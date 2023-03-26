@@ -1,0 +1,13 @@
+<div class="header__header">
+    <h1 class="header__title">
+        Вы собрали:
+    </h1>
+    <p class="header__id">
+        id: {{ team.pk }}
+    </p>
+</div>
+<div class="header__letters">
+    {% for letter in letters.all %}
+        <span class="letter">{{ letter.letter }}</span>
+    {% endfor %}
+</div>

@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href='{% static "pages/index.css" %}' type='text/css' media='all'>
+{% endblock %}
+{% block warning %}
+    {% if warning %}
+        <div class="warning__back" id="Warning">
+            <div class="warning">
+                <h3 class="warning__title">Привет!</h3>
+                <p class="warning__text">Добро пожаловать на квест от CSTATI! Вам предстоит искать QR-коды на Покре и отгадывать загадки.</p>
+                <p class="warning__tip">Внимание! Не меняйте устройство команды и не используйте VPN или иные средства смены IP-адореса и сессии в течение квеста.</p>
+                <button class="warning__button" id="WarningButton">Поехали!</button>
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block error %}
+    {% if error %}
+        <div class="error" id="Error">
+            <p class="error__text">Неправильный ответ!</p>
+            <button class="button__empty" id="CloseError"><span class="icon-close"></span></button>
+        </div>
+    {% endif %}
+{% endblock %}
+{% block letters %}
+    {% include "includes/letters.html" %}
+{% endblock %}
+{% block content %}
+    <div class="section">
+        <h1 class="section__header">Вопрос</h1>
+        <p class="section__text">
+            {{ puzzle.text }}
+        </p>
+        <p class="section__tip">
+            {{ puzzle.tip }}
+        </p>
+        <form class="section__input__group" action="{% url 'answer' puzzle.pk %}" method="post">
+            {% csrf_token %}
+            <input type="text" class="section__input" placeholder="Введите ответ" name="answer">
+            <button type="submit" class="section__input__submit"><span class="icon-arrow"></span></button>
+        </form>
+    </div>
+{% endblock %}
+{% block scripts %}
+    {% if error %}
+    <script src="{% static 'js/error.js' %}"></script>
+    {% endif %}
+    {% if warning %}
+    <script src="{% static 'js/warning.js' %}"></script>
+    {% endif %}
+{% endblock %}

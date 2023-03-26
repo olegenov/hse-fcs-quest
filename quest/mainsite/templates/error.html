@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href='{% static "pages/index.css" %}' type='text/css' media='all'>
+{% endblock %}
+{% block content %}
+    {% csrf_token %}
+    <div class="section">
+        <h1 class="section__header">Ошибка</h1>
+        <h3 class="section__subtitle">{{ error_text }}</h3>
+        <p class="section__text">
+            {{ tip }}
+        </p>
+    </div>
+{% endblock %}

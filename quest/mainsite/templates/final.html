@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block static %}
+    {% load static %}
+    <link rel="stylesheet" href='{% static "pages/index.css" %}' type='text/css' media='all'>
+{% endblock %}
+{% block letters %}
+    {% include "includes/letters.html" %}
+{% endblock %}
+{% block content %}
+    <div class="section">
+        <h1 class="section__header">Ура, финал!</h1>
+        <p class="section__text">
+            Вы достигли финала. Отправляйтесь к стойке информации (корпус M, 1 этаж)
+        </p>
+        <p class="section__tip">
+            Покажите эту страницу организатору и назовите итоговое слово.
+        </p>
+    </div>
+{% endblock %}

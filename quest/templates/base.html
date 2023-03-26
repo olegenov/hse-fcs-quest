@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Квест</title>
+    {% block static %}
+    {% endblock %}
+</head>
+<body class="body">
+    {% block warning %}
+    {% endblock %}
+    {% block error %}
+    {% endblock %}
+    <nav class="nav">
+        <a href="https://t.me/cstati_hse" class="link">
+            <p class="nav__text">
+                by CSTATI
+            </p>
+        </a>
+        <span class="icon-cstati"></span>
+    </nav>
+    <main class="main">
+        <header class="header">
+            {% block letters %}
+            {% endblock %}
+        </header>
+        {% block content %}
+        {% endblock %}
+    </main>
+</body>
+{% block scripts %}
+{% endblock %}
+</html>
