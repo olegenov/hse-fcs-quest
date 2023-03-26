@@ -1,9 +1,12 @@
-@import url('../font/HSESans-Black.ttf');
-@import url('../font/HSESans-Bold.ttf');
-@import url('../font/HSESans-Italic.ttf');
-@import url('../font/HSESans-Regular.ttf');
-@import url('../font/HSESans-SemiBold.ttf');
-@import url('../font/HSESans-Thin.ttf');
+@font-face {
+    font-family: 'HSE sans';
+    src: url('../font/HSESans-Black.ttf') format('truetype'),
+    url('../font/HSESans-Bold.ttf') format('truetype'),
+    url('../font/HSESans-Italic.ttf') format('truetype'),
+    url('../font/HSESans-Regular.ttf') format('truetype'),
+    url('../font/HSESans-SemiBold.ttf') format('truetype'),
+    url('../font/HSESans-Thin.ttf') format('truetype');
+}
 
 @import "../vendor/normalize.css";
 @import "../styles/styles.css";
