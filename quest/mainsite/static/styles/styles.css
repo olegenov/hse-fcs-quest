@@ -188,7 +188,7 @@
 }
 
 .section__input:focus {
-    outline: 4px solid #7958FF;
+    border: 4px solid #7958FF;
 }
 
 .section__input__submit {
