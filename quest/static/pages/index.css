@@ -4,20 +4,8 @@
 
 @font-face {
     font-family: 'HSE Sans';
-    src: url('../font/HSESans-Black.ttf') format('truetype');
-    font-weight: 900;
-}
-
-@font-face {
-    font-family: 'HSE Sans';
     src: url('../font/HSESans-Bold.ttf') format('truetype');
     font-weight: 700;
-}
-
-@font-face {
-    font-family: 'HSE Sans';
-    src: url('../font/HSESans-Italic.ttf') format('truetype');
-    font-weight: 400;
 }
 
 @font-face {
@@ -26,17 +14,6 @@
     font-weight: 400;
 }
 
-@font-face {
-    font-family: 'HSE Sans';
-    src: url('../font/HSESans-SemiBold.ttf') format('truetype');
-    font-weight: 800;
-}
-
-@font-face {
-    font-family: 'HSE Sans';
-    src: url('../font/HSESans-Thin.ttf') format('truetype');
-    font-weight: 400;
-}
 
 * {
     box-sizing: border-box;
