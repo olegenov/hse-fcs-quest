@@ -1,5 +1,9 @@
+@import "../vendor/normalize.css";
+@import "../styles/styles.css";
+@import "../styles/icons.css";
+
 @font-face {
-    font-family: 'HSE sans';
+    font-family: 'HSE Sans';
     src: url('../font/HSESans-Black.ttf') format('truetype'),
     url('../font/HSESans-Bold.ttf') format('truetype'),
     url('../font/HSESans-Italic.ttf') format('truetype'),
@@ -7,10 +11,6 @@
     url('../font/HSESans-SemiBold.ttf') format('truetype'),
     url('../font/HSESans-Thin.ttf') format('truetype');
 }
-
-@import "../vendor/normalize.css";
-@import "../styles/styles.css";
-@import "../styles/icons.css";
 
 * {
     box-sizing: border-box;
