@@ -189,6 +189,7 @@
 
 .section__input:focus {
     border: 4px solid #7958FF;
+    outline: none;
 }
 
 .section__input__submit {
