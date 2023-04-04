@@ -17,7 +17,7 @@ def index(request, puzzle_pk):
             request,
             'error.html',
             {
-                'error_text': "Неверный код досутпа. Скорее всего, вы не сканировали QR"
+                'error_text': "Неверный код доступа. Скорее всего, вы не сканировали QR"
             }
         )
 
