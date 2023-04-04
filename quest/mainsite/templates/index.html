@@ -35,7 +35,7 @@
         <p class="section__tip">
             {{ puzzle.tip }}
         </p>
-        <form class="section__input__group" action="{% url 'answer' puzzle.pk %}" method="post">
+        <form class="section__input__group" action="{% url 'answer' puzzle.pk %}?code={{ puzzle.secret_code }}" method="post">
             {% csrf_token %}
             <input type="text" class="section__input" placeholder="Введите ответ" name="answer">
             <button type="submit" class="section__input__submit"><span class="icon-arrow"></span></button>

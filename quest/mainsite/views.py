@@ -10,6 +10,16 @@ def index(request, puzzle_pk):
         request.session.save()
 
     puzzle = get_object_or_404(Puzzle, pk = puzzle_pk)
+    code = request.GET.get('code')
+
+    if code != puzzle.secret_code:
+        return render(
+            request,
+            'error.html',
+            {
+                'error_text': "Неверный код досутпа. Скорее всего, вы не сканировали QR"
+            }
+        )
 
     if not Team.objects.filter(session=request.session.session_key).exists() and puzzle.puzzle_id != 1:
         return render(

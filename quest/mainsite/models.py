@@ -17,6 +17,7 @@ class Puzzle(models.Model):
     )
     tip = models.TextField(null=True)
     tip_this = models.TextField(null=True, blank=True)
+    secret_code = models.CharField(max_length=10, default="0000", unique=True)
 
     def __str__(self):
         return str(self.puzzle_id)
