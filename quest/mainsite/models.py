@@ -1,4 +1,7 @@
+import random
+
 from django.db import models
+
 
 class Letter(models.Model):
     letter = models.CharField(max_length=1)
@@ -17,7 +20,7 @@ class Puzzle(models.Model):
     )
     tip = models.TextField(null=True)
     tip_this = models.TextField(null=True, blank=True)
-    secret_code = models.CharField(max_length=1000, unique=False)
+    secret_code = models.CharField(max_length=10, unique=True, default=str(random.randint(1, 99)))
 
     def __str__(self):
         return str(self.puzzle_id)
